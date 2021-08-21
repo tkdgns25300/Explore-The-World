@@ -1,5 +1,76 @@
+/* ==================== BASE ==================== */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==================== NAV ==================== */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 5rem 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav__menu {
+    position: relative;
+    left: 30rem;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.nav__search-icon {
+    color: white;
+}
+
+/* ==================== HOME ==================== */
+.home {
+    background: url('../images/Home.jpg');
+    width: 100%;
+    height: 100vh;
+}
+
