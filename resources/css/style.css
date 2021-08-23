@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow: auto;
 }
 
 ul {
@@ -33,10 +33,12 @@ img {
     left: 0;
     width: 100%;
     height: auto;
-    padding: 1.5rem 5rem 1.5rem 2rem;
+    padding: .5rem 5rem .5rem 2rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .nav__logo {
@@ -50,8 +52,8 @@ img {
 
 .nav__menu {
     position: relative;
-    left: 30rem;
-    width: 25%;
+    left: 23rem;
+    width: 30%;
     display: flex;
     justify-content: space-between;
 }
@@ -104,9 +106,13 @@ img {
 
 /* ==================== HOME ==================== */
 .home {
+    position: relative;
     background: url('../images/Home.jpg');
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100vh;
+    margin-bottom: 10rem;
 }
 
 .home__icons {
@@ -135,21 +141,257 @@ img {
 }
 
 .home__title {
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    letter-spacing: .5rem;
 }
 
-.home__title::before {
+.home__subtitle {
+    font-family: 'Playball', cursive;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    color: orangered;
+    padding-left: .5rem;
+}
+
+.home__scroll {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__scroll-mouse {
+    background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #fff 50%, #fff 100%);
+    position: relative;
+    width: 2.3rem;
+    height: 3.8rem;
+    border-radius: 100px;
+    background-size: 100% 200%;
+    animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
+}
+
+.home__scroll-mouse::before, .home__scroll-mouse::after {
     content: '';
-    display: block;
-    width: 10%;
-    height: 3px;
-    background: orangered;
-    margin-bottom: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-/* .home__subtitle {
-    font-size: 1.2rem;
-    text-align: right;
-} */
+.home__scroll-mouse::before {
+    width: 2.1rem;
+    height: 3.6rem;
+    border-radius: 100px;
+    background-color: #222a30;
+}
+
+.home__scroll-mouse::after {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    animation: trackBallSlide 5s linear infinite;
+}
+
+.home__scroll-text {
+    margin-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    letter-spacing: .5rem;
+    color: white;
+    animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
+}
+
+/* Mouse Scroll KeyFrames */
+@keyframes colorSlide {
+    0% {
+        background-position: 0% 100%;
+    }
+    20% {
+        background-position: 0% 0%;
+    }
+    21% {
+        background-color: #4e5559;
+    }
+    29.99% {
+        background-color: #ffffff;
+        background-position: 0% 0%;
+    }
+    30% {
+        background-color: #4e5559;
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 0% 0%;
+    }
+    51% {
+        background-color: #4e5559;
+    }
+    59% {
+        background-color: #ffffff;
+        background-position: 0% 0%;
+    }
+    60% {
+        background-color: #4e5559;
+        background-position: 0% 0%;
+    }
+    80% {
+        background-position: 0% 0%;
+    }
+    81% {
+        background-color: #4e5559;
+    }
+    90%,
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+@keyframes trackBallSlide {
+    0% {
+        opacity: 1;
+        transform: scale(1) translateY(-20px);
+    }
+    6% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    14% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+    }
+    15%,19% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-20px);
+    }
+    28%,
+    29.99% {
+        opacity: 1;
+        transform: scale(1) translateY(-20px);
+    }
+    30% {
+        opacity: 1;
+        transform: scale(1) translateY(-20px);
+    }
+    36% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    44% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+    }
+    45%,
+    49% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-20px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1) translateY(-20px);
+    }
+    66% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    74% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+    }
+    75%,
+    79% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-20px);
+    }
+    88%,
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(-20px);
+    }
+}
+
+@keyframes nudgeMouse {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(8px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(8px);
+    }
+    90% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes nudgeText {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(20px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(20px);
+    }
+    90% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes colorText {
+    21% {
+        color: #4e5559;
+    }
+    30% {
+        color: #ffffff;
+    }
+    51% {
+        color: #4e5559;
+    }
+    60% {
+        color: #ffffff;
+    }
+    81% {
+        color: #4e5559;
+    }
+    90% {
+        color: #ffffff;
+    }
+}
+
+/* ==================== MAIN ==================== */
+.main {
+    background: url('../images/Finland.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
