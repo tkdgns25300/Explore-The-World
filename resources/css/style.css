@@ -34,7 +34,7 @@ img {
     width: 100%;
     height: auto;
     padding: .5rem 5rem .5rem 2rem;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,7 +112,6 @@ img {
     background-size: cover;
     width: 100%;
     height: 100vh;
-    margin-bottom: 10rem;
 }
 
 .home__icons {
@@ -388,10 +387,93 @@ img {
 }
 
 /* ==================== MAIN ==================== */
-.main {
-    background: url('../images/Finland.jpg');
+
+.country-section {
+    position: relative;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+}
+
+/* Finland */
+
+.finland {
+    background: url('../images/Finland.jpg');
+}
+
+.description {
+    position: relative;
+    width: 33%;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    padding: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: white;
+}
+
+.des__bg {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    
+}
+
+.des__icon {
+    margin-right: 1rem;
+}
+
+.first-des,
+.second-des,
+.third-des {
+    position: relative;
+}
+
+.first-des {
+    top: 5rem;
+}
+
+.second-des {
+    top: 11rem;
+}
+
+.third-des {
+    top: 27rem;
+}
+
+.main-des {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.country {
+    position: absolute;
+    top: 65%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.country__flag {
+    width: 8rem;
+    margin-right: 2rem;
+}
+
+.country__name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Switzerland */
+
+.switzerland {
+    background: url('../images/Switzerland.jpg');
 }
