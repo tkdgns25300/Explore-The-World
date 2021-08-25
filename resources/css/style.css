@@ -477,3 +477,41 @@ img {
 .switzerland {
     background: url('../images/Switzerland.jpg');
 }
+
+/* Japan */
+
+.japan {
+    background: url('../images/Japan.jpg');
+}
+
+/* Singapore */
+
+.singapore {
+    background: url('../images/Singapore.jpg');
+}
+
+/* Canada */
+
+.canada {
+    background: url('../images/Canada.jpg');
+}
+
+.canada .country__flag {
+    width: 10rem;
+}
+
+/* New York */
+
+.new-york {
+    background: url('../images/New York.jpg')
+}
+
+/* Salar de Uyuni */
+
+.uyuni {
+    background: url('../images/Salar de Uyuni.jpg');
+}
+
+.uyuni .country__name {
+    font-size: 7rem;
+}
