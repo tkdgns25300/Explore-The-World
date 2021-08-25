@@ -450,6 +450,23 @@ img {
     margin-bottom: 1rem;
 }
 
+.main-des::after {
+    content: '';
+    position: relative;
+    bottom: .5rem;
+    margin-left: 1rem;
+    display: inline-block;
+    width: 60%;
+    height: 3px;
+    background-color: white;
+    align-self: center;
+    border-radius: 30%;
+}
+
+.sub-des {
+    color: gray;
+}
+
 .country {
     position: absolute;
     top: 65%;
