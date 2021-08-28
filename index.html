@@ -22,11 +22,19 @@
     <!-- ==================== CSS ==================== -->
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
 
+    <!-- ==================== Swiper CSS ==================== -->
+    <link rel="stylesheet" href="resources/css/swiper-bundle.min.css" type="text/css">
+
+    <!-- ==================== Full Page CSS ==================== -->
+    <link rel="stylesheet" href="resources/css/fullpage.css" type="text/css">
+
     <title>Explore The World</title>
 </head>
 
 
 <body>
+
+    
 
     <!-- ==================== NAV ==================== -->
     <nav class="nav">
@@ -72,220 +80,231 @@
     </section>
 
     <!-- ==================== MAIN ==================== -->
-    <main class="main">
+    <main class="main swiper">
 
-        <!-- Finland -->
-        <section class="country-section finland">
-            <div class="description finland__description">
-                <div class="first-des">
-                    <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                
-                <div class="second-des">
-                    <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+        <div class="swiper-wrapper">
 
-                <div class="third-des">
-                    <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-            </div>
+            <!-- Finland -->
+            <section class="country-section finland swiper-slide">
+                <div class="description finland__description">
+                    <div class="first-des">
+                        <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    
+                    <div class="second-des">
+                        <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
 
-            <div class="country">
-                <img class="country__flag" src="resources/images/Flag of Finland.png">
-                <h1 class="country__name">Finland.</h1>
-            </div>
-        </section>
-        
-        <!-- Switzerland -->
-        <section class="country-section switzerland">
-            <div class="description switzerland__description">
-                <div class="first-des">
-                    <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                
-                <div class="second-des">
-                    <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="third-des">
+                        <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
                 </div>
 
-                <div class="third-des">
-                    <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <div class="country">
+                    <img class="country__flag" src="resources/images/Flag of Finland.png">
+                    <h1 class="country__name">Finland.</h1>
                 </div>
-            </div>
+            </section>
+            
+            <!-- Switzerland -->
+            <section class="country-section switzerland swiper-slide">
+                <div class="description switzerland__description">
+                    <div class="first-des">
+                        <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    
+                    <div class="second-des">
+                        <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
 
-            <div class="country">
-                <img class="country__flag" src="resources/images/Flag of Switzerland.png">
-                <h1 class="country__name">Switzerland.</h1>
-            </div>
-        </section>
-
-        <!-- Japan -->
-        <section class="country-section japan">
-            <div class="description japan__description">
-                <div class="first-des">
-                    <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                
-                <div class="second-des">
-                    <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div class="third-des">
-                    <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-            </div>
-
-            <div class="country">
-                <img class="country__flag" src="resources/images/Flag of Japan.png">
-                <h1 class="country__name">Japan.</h1>
-            </div>
-        </section>
-
-        <!-- Singapore -->
-        <section class="country-section singapore">
-            <div class="description singapore__description">
-                <div class="first-des">
-                    <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                
-                <div class="second-des">
-                    <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="third-des">
+                        <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
                 </div>
 
-                <div class="third-des">
-                    <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <div class="country">
+                    <img class="country__flag" src="resources/images/Flag of Switzerland.png">
+                    <h1 class="country__name">Switzerland.</h1>
                 </div>
-            </div>
+            </section>
 
-            <div class="country">
-                <img class="country__flag" src="resources/images/Flag of Singapore.png">
-                <h1 class="country__name">Singapore.</h1>
-            </div>
-        </section>
+            <!-- Japan -->
+            <section class="country-section japan swiper-slide">
+                <div class="description japan__description">
+                    <div class="first-des">
+                        <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    
+                    <div class="second-des">
+                        <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
 
-        <!-- Canada -->
-        <section class="country-section canada">
-            <div class="description canada__description">
-                <div class="first-des">
-                    <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                
-                <div class="second-des">
-                    <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div class="third-des">
-                    <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-            </div>
-
-            <div class="country">
-                <img class="country__flag" src="resources/images/Flag of Canada.gif">
-                <h1 class="country__name">Canada.</h1>
-            </div>
-        </section>
-
-        <!-- New York -->
-        <section class="country-section new-york">
-            <div class="description new-york__description">
-                <div class="first-des">
-                    <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                
-                <div class="second-des">
-                    <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="third-des">
+                        <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
                 </div>
 
-                <div class="third-des">
-                    <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <div class="country">
+                    <img class="country__flag" src="resources/images/Flag of Japan.png">
+                    <h1 class="country__name">Japan.</h1>
                 </div>
-            </div>
+            </section>
 
-            <div class="country">
-                <img class="country__flag" src="resources/images/Flag of the United States.png">
-                <h1 class="country__name">New York.</h1>
-            </div>
-        </section>
+            <!-- Singapore -->
+            <section class="country-section singapore swiper-slide">
+                <div class="description singapore__description">
+                    <div class="first-des">
+                        <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    
+                    <div class="second-des">
+                        <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
 
-        <!-- Uyuni -->
-        <section class="country-section uyuni">
-            <div class="description uyuni__description">
-                <div class="first-des">
-                    <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div class="third-des">
+                        <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
                 </div>
-                
-                <div class="second-des">
-                    <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="country">
+                    <img class="country__flag" src="resources/images/Flag of Singapore.png">
+                    <h1 class="country__name">Singapore.</h1>
+                </div>
+            </section>
+
+            <!-- Canada -->
+            <section class="country-section canada swiper-slide">
+                <div class="description canada__description">
+                    <div class="first-des">
+                        <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    
+                    <div class="second-des">
+                        <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="third-des">
+                        <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
                 </div>
 
-                <div class="third-des">
-                    <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
-                    <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <div class="country">
+                    <img class="country__flag" src="resources/images/Flag of Canada.gif">
+                    <h1 class="country__name">Canada.</h1>
                 </div>
-            </div>
+            </section>
 
-            <div class="country">
-                <img class="country__flag" src="resources/images/Flag of Bolivia.png">
-                <h1 class="country__name">Salar de Uyuni.</h1>
-            </div>
-        </section>
+            <!-- New York -->
+            <section class="country-section new-york swiper-slide">
+                <div class="description new-york__description">
+                    <div class="first-des">
+                        <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    
+                    <div class="second-des">
+                        <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
 
+                    <div class="third-des">
+                        <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+
+                <div class="country">
+                    <img class="country__flag" src="resources/images/Flag of the United States.png">
+                    <h1 class="country__name">New York.</h1>
+                </div>
+            </section>
+
+            <!-- Uyuni -->
+            <section class="country-section uyuni swiper-slide">
+                <div class="description uyuni__description">
+                    <div class="first-des">
+                        <h1 class="main-des"><i class="uil uil-mountains-sun des__icon"></i>Attraction</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    
+                    <div class="second-des">
+                        <h1 class="main-des"><i class="uil uil-swimmer des__icon"></i>Activity</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div class="third-des">
+                        <h1 class="main-des"><i class="uil uil-map-marker des__icon"></i>Feature</h1>
+                        <p class="sub-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+
+                <div class="country">
+                    <img class="country__flag" src="resources/images/Flag of Bolivia.png">
+                    <h1 class="country__name">Salar de Uyuni.</h1>
+                </div>
+            </section>
+            
+        </div>
+
+        <!-- navigation button -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- scrollbar -->
+        <div class="swiper-scrollbar"></div>
 
     </main>
+
     
 
 
@@ -301,6 +320,12 @@
 
 
     <!-- ==================== MAIN JS ==================== -->
-    <link href="resources/js/main.js">
+    <link href="resources/js/main.js" type="text/javascript">
+
+    <!-- ==================== Swiper JS ==================== -->
+    <link href="resources/js/swiper-bundle.min.js" type="text/javascript">
+
+    <!-- ==================== Full Page JS ==================== -->
+    <link href="resources/js/fullpage.min.js" type="text/javascript">
 </body>
 </html>
