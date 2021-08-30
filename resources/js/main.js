@@ -1,22 +1,20 @@
-// Swiper JS : Main Section
+/* ==================== Swiper JS : Main Section ==================== */
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+  // Optional parameters
+  loop: true,
 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
 
 

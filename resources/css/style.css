@@ -392,6 +392,7 @@ img {
     position: relative;
     background-position: center;
     background-size: cover;
+    background: no-repeat;
     width: 100%;
     height: 100vh;
 }
@@ -531,4 +532,10 @@ img {
 
 .uyuni .country__name {
     font-size: 7rem;
+}
+
+/* Swiper */
+.swiper {
+    width: 100%;
+    height: 100vh;
 }
