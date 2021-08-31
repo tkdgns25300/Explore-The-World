@@ -539,3 +539,17 @@ img {
     width: 100%;
     height: 100vh;
 }
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: block;
+    position: absolute !important;
+    top: 65% !important;
+    color: white !important;
+    font-weight: 900;
+}
