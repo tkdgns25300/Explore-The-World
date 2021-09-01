@@ -2,7 +2,7 @@
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  loop: true,
+  
 
   // Navigation arrows
   navigation: {
@@ -15,8 +15,6 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
-
-
 
 
 

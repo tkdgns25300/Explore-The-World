@@ -553,3 +553,7 @@ img {
     color: white !important;
     font-weight: 900;
 }
+
+.swiper-scrollbar {
+    color: white !important;
+}
