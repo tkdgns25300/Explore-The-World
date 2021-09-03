@@ -3,30 +3,40 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   speed: 600,
+  loop: true,
+
+  // pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+    dynamicMainBullets: 3,
+  },
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  },
+  
 });
 
 
-/* ==================== FullPage.js : Home <-> Main ==================== */
+/* ==================== FullPage : Home <-> Main ==================== */
 
-new fullpage('#fullpage', {
-  //options here
-  licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-  autoScrolling:true,
-  scrollHorizontally: true
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		scrollingSpeed: 1900,
+	});
 });
 
-//methods
-fullpage_api.setAllowScrolling(false);
 
+/* ==================== ScrollReveal ==================== */
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.home__title', {
+  rotate: { x: 100, y: 100, z: 0 },
+  duration: 1000
+});
+
+sr.reveal('.main');
