@@ -26,17 +26,30 @@ const swiper = new Swiper('.swiper', {
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		scrollingSpeed: 1900,
+    scrollingSpeed: 1900,
+    // autoScrolling: false
 	});
 });
 
 
 /* ==================== ScrollReveal ==================== */
-window.sr = ScrollReveal({ reset: true });
 
-sr.reveal('.home__title', {
-  rotate: { x: 100, y: 100, z: 0 },
-  duration: 1000
+const sr = ScrollReveal({
+  distance: '1rem',
+  duration: 1500,
+  reset: true
 });
 
-sr.reveal('.main');
+sr.reveal('.nav', {
+  origin: 'top'
+})
+
+sr.reveal('.home__icons', {
+  origin: 'left',
+})
+
+sr.reveal('.home__title, .home__subtitle', {
+  origin: 'left',
+  interval: 200,
+  delay: 500
+})

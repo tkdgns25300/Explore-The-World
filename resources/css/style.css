@@ -108,11 +108,12 @@ img {
 /* ==================== HOME ==================== */
 .home {
     position: relative;
-    background: url('../images/Home.jpg');
+    background-image: linear-gradient(to bottom, transparent 70%, black 100%), url('../images/Home.jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    margin-bottom: 40vh;
 }
 
 .home__icons {
@@ -401,7 +402,8 @@ img {
 /* Finland */
 
 .finland {
-    background: url('../images/Finland.jpg');
+    background-image: linear-gradient(to top, transparent 70%, black 100%), url('../images/Finland.jpg');
+    /* background: url('../images/Finland.jpg'); */
 }
 
 .description {
@@ -494,25 +496,29 @@ img {
 /* Switzerland */
 
 .switzerland {
-    background: url('../images/Switzerland.jpg');
+    background-image: linear-gradient(to top, transparent 70%, black 100%), url('../images/Switzerland.jpg');
+    /* background: url('../images/Switzerland.jpg'); */
 }
 
 /* Japan */
 
 .japan {
-    background: url('../images/Japan.jpg');
+    background-image: linear-gradient(to top, transparent 70%, black 100%), url('../images/Japan.jpg');
+    /* background: url('../images/Japan.jpg'); */
 }
 
 /* Singapore */
 
 .singapore {
-    background: url('../images/Singapore.jpg');
+    background-image: linear-gradient(to top, transparent 70%, black 100%), url('../images/Singapore.jpg');
+    /* background: url('../images/Singapore.jpg'); */
 }
 
 /* Canada */
 
 .canada {
-    background: url('../images/Canada.jpg');
+    background-image: linear-gradient(to top, transparent 70%, black 100%), url('../images/Canada.jpg');
+    /* background: url('../images/Canada.jpg'); */
 }
 
 .canada .country__flag {
@@ -522,13 +528,15 @@ img {
 /* New York */
 
 .new-york {
-    background: url('../images/New York.jpg')
+    background-image: linear-gradient(to top, transparent 70%, black 100%), url('../images/New York.jpg');
+    /* background: url('../images/New York.jpg') */
 }
 
 /* Salar de Uyuni */
 
 .uyuni {
-    background: url('../images/Salar de Uyuni.jpg');
+    background-image: linear-gradient(to top, transparent 70%, black 100%), url('../images/Salar de Uyuni.jpg');
+    /* background: url('../images/Salar de Uyuni.jpg'); */
 }
 
 .uyuni .country__name {
