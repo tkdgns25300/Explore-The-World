@@ -8,3 +8,4 @@ I have put together a blog about the process I went through while working on the
 If you are interested, please visit my blog too!
 
 BLOG : https://blog.naver.com/tkdgns25300
+URL : https://exploretheworld.site/
